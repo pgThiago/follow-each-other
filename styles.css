@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100vw;
+    height: 100vh;
+    background-color: #24292E;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    max-width: 1200px;
+    height: 100%;
+   
+    margin: auto;
+
+}
+
+.container .result {
+    width: 90%;
+    height: 10%;
+    
+    border-radius: 10px;
+    border: none;
+
+    margin: 3px 0 3px;
+
+    padding: 10px;
+    background-color: #F0F0F4;
+
+    margin-bottom: 35px;
+
+}
+
+.container .result #resu {
+    font-size: 30px;
+    font-family: Segoe UI;
+    color: #24292E;
+    text-align: center;
+}
+
+
+.logo {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 45px;
+}
+
+.input-one {
+    width: 25%;
+    height: 10%;
+    
+    border-radius: 10px;
+    border: none;
+
+    margin: 3px 0 3px;
+
+    font-size: 30px;
+    font-family: Segoe UI;
+    color: #24292E;
+
+    padding: 10px;
+
+}
+
+.input-two {
+    width: 25%;
+    height: 10%;
+    
+    border-radius: 10px;
+    border: none;
+
+    margin: 3px 0 3px;
+
+    font-size: 30px;
+    font-family: Segoe UI;
+    color: #24292E;
+
+    padding: 10px;
+
+}
+
+.checkButton {
+    width: 25%;
+    height: 10%;
+    
+    border-radius: 10px;
+    border: none;
+
+    margin-top: 20px;
+
+    cursor: pointer;
+
+    font-size: 20px;
+    font-family: Segoe UI;
+    color: #24292E;
+
+    transition: background-color 0.7s;
+    text-decoration: none;
+}
+
+.checkButton:hover {
+    background-color: #24292E;
+    font-size: 20px;
+    font-family: Segoe UI;
+    color: #000;
+}
+
+
+
+
+
+
+
+
+
+
