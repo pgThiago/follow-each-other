@@ -4,7 +4,9 @@
 
 ---
 
-## Hosted on [GitHub Pages](https://pgthiago.github.io/follow-each-other/).
+---
+
+---
 
 ---
 
