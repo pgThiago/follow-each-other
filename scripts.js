@@ -7,12 +7,9 @@ async function handleCheck(){
     let userOne = document.querySelector('.input-one');
     let userTwo = document.querySelector('.input-two'); 
 
-    const userOneValue = userOne.value;
-    const userTwoValue = userTwo.value;
+    let userOneValue = userOne.value.toLowerCase();
+    let userTwoValue = userTwo.value.toLowerCase();
 
-    userOneValue.toLowerCase();
-    userTwoValue.toLowerCase();
-    
     setTimeout(() => {
         userOne.value = '';
         userTwo.value = '';
