@@ -3,13 +3,9 @@ async function handleCheck(){
     let oneFollowTwo = false;
     let twoFollowOne = false;
 
-    let userOne = '';
-    let userTwo = '';
-    let resultText = '';
-
-    resultText = document.querySelector('#resu');
-    userOne = document.querySelector('.input-one');
-    userTwo = document.querySelector('.input-two'); 
+    let resultText = document.querySelector('#resu');
+    let userOne = document.querySelector('.input-one');
+    let userTwo = document.querySelector('.input-two'); 
 
     const userOneValue = userOne.value;
     const userTwoValue = userTwo.value;
