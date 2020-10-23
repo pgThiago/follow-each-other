@@ -17,21 +17,23 @@ async function handleCheck(){
 
     resultText.innerHTML = '';
 
-    const OneResponse = await fetch(`https://api.github.com/users/${userOneValue}/following`);
+    const OneResponse = await fetch(`https://api.github.com/users/${userOneValue}/following?per_page=${100}`);
     const OneResponseJson = await OneResponse.json();
 
-    const TwoResponse = await fetch(`https://api.github.com/users/${userTwoValue}/following`);
+    const TwoResponse = await fetch(`https://api.github.com/users/${userTwoValue}/following?per_page=${100}`);
     const TwoResponseJson = await TwoResponse.json();
     
     if(OneResponse.status === 200 && TwoResponse.status === 200){
         for (followedByUserOne of OneResponseJson){
-            if(followedByUserOne.login.toLowerCase() === userTwoValue)
+            if(followedByUserOne.login.toLowerCase() === userTwoValue){
                 oneFollowTwo = true;
+            }
         }
         
         for (followedByUserTwo of TwoResponseJson){
-            if(followedByUserTwo.login.toLowerCase() === userOneValue)
+            if(followedByUserTwo.login.toLowerCase() === userOneValue){
                 twoFollowOne = true;
+            }
         }
 
     
