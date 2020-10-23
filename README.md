@@ -8,6 +8,6 @@
 
 ---
 
-## Click [here](https://docs.github.com/en/free-pro-team@latest/rest/reference/users#followers) to go to the API documentation.
+## Click [here](https://docs.github.com/en/free-pro-team@latest/rest/reference/users#list-the-people-the-authenticated-user-follows) to go to the API documentation.
 
 ---
