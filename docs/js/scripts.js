@@ -13,6 +13,11 @@ async function handleCheck() {
 		userTwo.value = ''
 	}, 5000)
 
+	if (!userOneValue || !userTwoValue) {
+		resultText.innerHTML = 'Try adding two users'
+		return
+	}
+
 	resultText.innerHTML = 'Loading...'
 
 	const userOneExists = await fetch(`https://api.github.com/users/${userOneValue}`)
